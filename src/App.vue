@@ -2,7 +2,9 @@
   <v-app>
     <v-content>
       <HeaderView/>
-      <vue-router/>
+      <div>
+        <router-view/>
+      </div>
       <FooterView/>
     </v-content>
   </v-app>
