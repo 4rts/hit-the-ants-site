@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-content>
-      <HeaderView/>
+      <header-view/>
       <div>
         <router-view/>
       </div>
-      <FooterView/>
+      <footer-view/>
     </v-content>
   </v-app>
 </template>

@@ -1,12 +1,14 @@
 <template>
-    <div>
-        grgr
-    </div>
+    <project-card></project-card>
 </template>
 
 <script>
+import ProjectCard from '@/components/ProjectCard'
 export default {
-    name: 'Projects'
+    name: 'Projects',
+    components: {
+        ProjectCard
+    }
 }
 </script>
 
