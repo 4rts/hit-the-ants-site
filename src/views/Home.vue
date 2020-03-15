@@ -36,10 +36,13 @@ export default {
 }
 .apple-sandol-font {
     font-size: 65px;
+    font-family: "Apple";
+    font-weight: 100;
 }
 .saithik-font {
     font-size: 90px;
     color: black;
     text-decoration: none;
+    font-family: 'Saithik';
 }
 </style>
