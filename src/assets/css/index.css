@@ -4,3 +4,14 @@
     font-weight: normal;
     font-style: normal;
 }
+/***************
+    v-toobar
+****************/
+.v-toolbar {
+    background: white;
+    text-align: center;
+    box-shadow: none;
+}
+.v-toolbar__content {
+    display: inline-block;
+}
