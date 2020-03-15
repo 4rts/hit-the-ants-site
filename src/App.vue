@@ -1,13 +1,13 @@
 <template>
-  <v-app>
-    <v-content>
-      <header-view/>
-      <div>
-        <router-view/>
-      </div>
-      <footer-view/>
-    </v-content>
-  </v-app>
+    <v-app>
+        <v-content class="content-wrapper">
+            <header-view/>
+            <div class="router-view-wrapper">
+                <router-view/>
+            </div>
+            <footer-view/>
+        </v-content>
+    </v-app>
 </template>
 
 <script>
@@ -27,3 +27,13 @@ export default {
   }),
 };
 </script>
+<style scoped>
+.content-wrapper {
+    text-align: center;
+}
+.router-view-wrapper {
+    display: inline-block;
+    width: 1440px;
+    text-align: left;
+}
+</style>
