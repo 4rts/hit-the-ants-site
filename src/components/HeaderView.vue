@@ -1,17 +1,17 @@
 <template>
-    <v-app-bar color="white">
-        <v-btn>
+    <v-app-bar>
+        <button class="header-view-button">
             <router-link to="/">Home</router-link>
-        </v-btn>
-        <v-btn>
+        </button>
+        <button class="header-view-button">
             <router-link to="/about">About</router-link>
-        </v-btn>
-        <v-btn>
+        </button>
+        <button class="header-view-button">
             <router-link to="/projects">Projects</router-link>
-        </v-btn>
-        <v-btn>
+        </button>
+        <button class="header-view-button">
             <router-link to="/contact">Contact</router-link>
-        </v-btn>
+        </button>
     </v-app-bar>
 </template>
 
@@ -22,5 +22,19 @@ export default {
 </script>
 
 <style scoped>
+.v-app-bar {
+    height: 80px !important;
+    background: white !important;
+}
+.header-view-button {
+    width: 100px;
+    height: 80px;
+    margin: 0 25px;
 
+}
+.header-view-button a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
 </style>

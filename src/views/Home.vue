@@ -18,6 +18,9 @@
             <router-link class="saithik-font" to="contact"> contact </router-link>
             <span class="apple-sandol-font">us.</span>
         </div>
+        <div class="small-logo">
+            <img src="../assets/images/logoSymbol.png">
+        </div>
     </div>
 </template>
 
@@ -44,5 +47,10 @@ export default {
     color: black;
     text-decoration: none;
     font-family: 'Saithik';
+}
+.small-logo {
+    position: fixed;
+    left: 44px;
+    bottom: 40px;
 }
 </style>
