@@ -13,5 +13,10 @@ export default {
 </script>
 
 <style scoped>
+.content-wrapper {
+    text-align: center;
+    padding-top: 60px;
+}
+
 
 </style>
