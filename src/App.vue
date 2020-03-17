@@ -31,7 +31,8 @@ export default {
 }
 .router-view-wrapper {
     display: inline-block;
-    width: 1440px;
+    max-width: 1340px;
     text-align: left;
+    padding-top : 60px;
 }
 </style>

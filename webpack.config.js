@@ -13,12 +13,12 @@ module.exports = {
               // Requires sass-loader@^7.0.0
               options: {
                 // This is the path to your variables
-                data: "@import '@/styles/variables.scss'"
+                data: "@import '@/assets/styles/variables.scss'"
               },
               // Requires sass-loader@^8.0.0
               options: {
                 // This is the path to your variables
-                prependData: "@import '@/styles/variables.scss'"
+                prependData: "@import '@/assets/styles/variables.scss'"
               },
             },
           ],
