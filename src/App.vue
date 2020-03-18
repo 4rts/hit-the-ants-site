@@ -5,8 +5,8 @@
             <div class="router-view-wrapper">
                 <router-view/>
             </div>
-            <footer-view/>
         </v-content>
+            <footer-view />
     </v-app>
 </template>
 
@@ -34,5 +34,8 @@ export default {
     max-width: 1340px;
     text-align: left;
     padding-top : 60px;
+}
+.footer-wrapper {
+    padding-bottom: 0px;
 }
 </style>
