@@ -1,10 +1,10 @@
 <template>
     <v-app>
         <header-view/>
-        <v-content class="content-wrapper">
-            <div class="router-view-wrapper">
+        <v-content>
+            <v-container fluid grid-list-sm pa-0>
                 <router-view/>
-            </div>
+            </v-container>
         </v-content>
         <footer-view/>
     </v-app>
@@ -26,16 +26,4 @@ export default {
 };
 </script>
 <style scoped>
-/* .content-wrapper {
-    text-align: center;
-}
-.router-view-wrapper {
-    display: inline-block;
-    width: 1440px;
-    text-align: left;
-    padding-top : 60px;
-}
-.footer-wrapper {
-    padding-bottom: 0px;
-} */
 </style>

@@ -1,42 +1,40 @@
 <template>
-    <div class="home">
-        <div class="bottom-offset">
-            <span class="apple-sandol-font">Hello, We are </span>
-            <img src="../assets/images/hittheants.png">
-        </div>
-        <div class="bottom-offset">
-            <span class="apple-sandol-font">We are now preparing for the next</span>
-            <router-link class="saithik-font" to="projects"> project. </router-link>
-        </div>
-        <div class="bottom-offset">
-            <span class="apple-sandol-font">If you’d like to learn</span>
-            <router-link class="saithik-font" to="about"> about </router-link>
-            <span class="apple-sandol-font">us,</span>
-        </div>
-        <div class="bottom-offset">
-            <span class="apple-sandol-font">you are always welcomed to</span>
-            <router-link class="saithik-font" to="contact"> contact </router-link>
-            <span class="apple-sandol-font">us.</span>
-        </div>
+    <v-layout column>
+        <v-flex>
+            <div class="mt-4 ml-12 image-content">
+                <div class="apple-sandol-font">Hi there, we are </div>
+                <img src="../assets/images/hittheants.png">
+            </div>
+            <div class="mt-4 ml-12"
+                v-for="(string, index) in stringLists"
+                :key="index">
+                <span class="apple-sandol-font">{{string.prefix}}</span>
+                <router-link class="saithik-font" :to="string.middle"> {{string.middle}} </router-link>
+                <span class="apple-sandol-font">{{string.suffix}}</span>
+            </div>
+        </v-flex>
         <div class="small-logo">
             <img src="../assets/images/logoSymbol.png">
         </div>
-    </div>
+    </v-layout>
 </template>
 
 <script>
 
 export default {
-    name: 'Home'
+    name: 'Home',
+    data() {
+        return {
+            stringLists: [
+                {prefix: 'If you’d like to learn, and working on the next ', middle:'projects', suffix:'.'},
+                {prefix: 'If you want to know more ', middle:'about', suffix:' our team,'},
+                {prefix: 'you’re more than welcome to ', middle:'contact', suffix:' us anytime.'}
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
-.home {
-    margin-top: 15px;
-}
-.bottom-offset {
-    margin-bottom: 15px;
-}
 .apple-sandol-font {
     font-size: 65px;
     font-family: "Apple";
@@ -52,5 +50,15 @@ export default {
     position: fixed;
     left: 44px;
     bottom: 40px;
+}
+.image-content >div{
+    display: inline-block;
+    position: relative;
+    bottom: 23px;
+}
+.image-content >img{
+    display: inline-block;
+    position: relative;
+    left: 22px;
 }
 </style>
