@@ -1,40 +1,51 @@
 <template>
-    <v-app-bar>
-        <button class="header-view-button">
-            <router-link to="/">Home</router-link>
-        </button>
-        <button class="header-view-button">
-            <router-link to="/about">About</router-link>
-        </button>
-        <button class="header-view-button">
-            <router-link to="/projects">Projects</router-link>
-        </button>
-        <button class="header-view-button">
-            <router-link to="/contact">Contact</router-link>
-        </button>
-    </v-app-bar>
+    <v-container fluid>
+        <v-col cols="12">
+            <v-row class="white align-center justify-center">
+                <div class="navagation-button mx-12"
+                    :class="{'focusing-button': (activingButton == link ? true : false)}"
+                    v-for="link in links"
+                    :key="link"
+                    :label="link"
+                    @click="moveToNavigationLink(link)">
+                    {{link}}
+                </div>
+            </v-row>
+        </v-col>
+    </v-container>
 </template>
 
 <script>
 export default {
-    name: 'HeaderView'
+    name: 'HeaderView',
+    data() {
+        return {
+            activingButton: 'HOME',
+            links: ['HOME','ABOUT','PROJECTS','CONTACT']
+        }
+    },
+    methods: {
+        moveToNavigationLink(link) {
+            if (link != this.$route.name) {
+                this.$router.push({name: link})
+                this.activingButton = link
+            }
+        }
+    }
 }
 </script>
 
 <style scoped>
-.v-app-bar {
-    height: 80px !important;
-    background: white !important;
-}
-.header-view-button {
-    width: 100px;
-    height: 80px;
-    margin: 0 25px;
-
-}
-.header-view-button a {
+.navagation-button {
+    font-size: 16pt;
+    font-family: 'Apple';
+    font-weight: 400;
+    background: none;
     color: black;
-    text-decoration: none;
-    font-size: 16px;
+    opacity: 40%;
+    cursor: pointer;
+}
+.focusing-button {
+    opacity: 100%;
 }
 </style>

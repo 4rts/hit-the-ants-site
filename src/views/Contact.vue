@@ -1,8 +1,8 @@
 <template>
-    <v-form
+    <span>sdfgd </span>
+    <!-- <v-form
         ref="form"
         v-model="valid"
-        :lazy-validation="lazy"
     >
         <v-text-field
             v-model="email"
@@ -23,7 +23,7 @@
         ></v-textarea>
 
         <v-btn text large color="black">Submit</v-btn>
-    </v-form>
+    </v-form> -->
 </template>
 
 <script>
