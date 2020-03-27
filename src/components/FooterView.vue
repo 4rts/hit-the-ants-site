@@ -60,8 +60,8 @@ export default {
   background-color : black !important ;
 }
 .text-center{
-  padding-left: 21%;
-  padding-right: 21%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .left-title{
   font-size: 16pt;
