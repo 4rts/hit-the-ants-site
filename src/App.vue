@@ -2,9 +2,7 @@
     <v-app>
         <header-view/>
         <v-content>
-            <v-container fluid grid-list-sm pa-0>
-                <router-view/>
-            </v-container>
+            <router-view/>
         </v-content>
         <footer-view/>
     </v-app>

@@ -18,6 +18,9 @@
 <script>
 export default {
     name: 'HeaderView',
+    mounted() {
+        this.$router.push({name: this.$route.name})
+    },
     data() {
         return {
             activingButton: 'HOME',

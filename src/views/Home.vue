@@ -1,22 +1,24 @@
 <template>
-    <v-layout column>
-        <v-flex>
-            <div class="mt-4 ml-12 image-content">
-                <div class="apple-sandol-font">Hi there, we are </div>
-                <img src="../assets/images/hittheants.png">
+    <v-container fluid grid-list-sm pa-0>
+        <v-layout column>
+            <v-flex>
+                <div class="mt-4 ml-12 image-content">
+                    <div class="apple-sandol-font">Hi there, we are </div>
+                    <img src="../assets/images/hittheants.png">
+                </div>
+                <div class="mt-4 ml-12"
+                    v-for="(string, index) in stringLists"
+                    :key="index">
+                    <span class="apple-sandol-font">{{string.prefix}}</span>
+                    <router-link class="saithik-font" :to="string.middle"> {{string.middle}} </router-link>
+                    <span class="apple-sandol-font">{{string.suffix}}</span>
+                </div>
+            </v-flex>
+            <div class="small-logo">
+                <img src="../assets/images/logoSymbol.png">
             </div>
-            <div class="mt-4 ml-12"
-                v-for="(string, index) in stringLists"
-                :key="index">
-                <span class="apple-sandol-font">{{string.prefix}}</span>
-                <router-link class="saithik-font" :to="string.middle"> {{string.middle}} </router-link>
-                <span class="apple-sandol-font">{{string.suffix}}</span>
-            </div>
-        </v-flex>
-        <div class="small-logo">
-            <img src="../assets/images/logoSymbol.png">
-        </div>
-    </v-layout>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
