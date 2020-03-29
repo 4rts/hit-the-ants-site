@@ -1,22 +1,44 @@
 <template>
-    <v-container fluid grid-list-sm pa-0>
-        <v-layout column>
+    <v-container class="d-flex flex-column pa-0">
+        <v-layout class="d-none d-md-block d-lg-block d-xl-block column">
             <v-flex>
                 <div class="mt-4 ml-12 image-content">
-                    <div class="apple-sandol-font">Hi there, we are </div>
+                    <div class="apple-sandol-font web">Hi there, we are </div>
                     <img src="../assets/images/hittheants.png">
                 </div>
                 <div class="mt-4 ml-12"
                     v-for="(string, index) in stringLists"
                     :key="index">
-                    <span class="apple-sandol-font">{{string.prefix}}</span>
-                    <router-link class="saithik-font" :to="string.middle"> {{string.middle}} </router-link>
-                    <span class="apple-sandol-font">{{string.suffix}}</span>
+                    <span class="apple-sandol-font web">{{string.prefix}}</span>
+                    <router-link class="saithik-font web" :to="string.middle"> {{string.middle}} </router-link>
+                    <span class="apple-sandol-font web">{{string.suffix}}</span>
                 </div>
             </v-flex>
             <div class="small-logo">
                 <img src="../assets/images/logoSymbol.png">
             </div>
+        </v-layout>
+
+        <v-layout class="d-md-none d-lg-none d-xl-none apple-sandol-font mobile">
+            <v-flex style="margin-top: auto;">
+                <v-flex class="d-flex mb-4">
+                    <div class=" d-inline-flex align-end">Hi there, we are </div>
+                    <img class="d-inline-flex ml-2" src="../assets/images/hittheants.png" style="height: 51px">
+                </v-flex>
+                <v-flex class="">
+                    <div class="d-flex">If you’d like to learn,</div>
+                    <div class="d-flex">
+                        <div class="d-inline-flex align-center">and working on the next</div>
+                        <router-link class="ml-4 d-inline-flex saithik-font mobile" to="projects">projects</router-link>
+                        <div class="d-inline-flex align-end">.</div>
+                    </div>
+                </v-flex>
+                <div class="d-flex" v-for="(string, index) in stringLists" :key="index">
+                    <div class="d-flex apple-sandol-font mobile">{{string.prefix}}</div>
+                    <router-link class="d-flex saithik-font mobile" :to="string.middle"> {{string.middle}} </router-link>
+                    <div class="d-flex apple-sandol-font mobile">{{string.suffix}}</div>
+                </div>
+            </v-flex>
         </v-layout>
     </v-container>
 </template>
@@ -37,17 +59,6 @@ export default {
 }
 </script>
 <style scoped>
-.apple-sandol-font {
-    font-size: 65px;
-    font-family: "Apple";
-    font-weight: 100;
-}
-.saithik-font {
-    font-size: 90px;
-    color: black;
-    text-decoration: none;
-    font-family: 'Saithik';
-}
 .small-logo {
     position: fixed;
     left: 44px;

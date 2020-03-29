@@ -41,7 +41,7 @@
                 <div>{{selecetedProfile.name}}</div>
                 <div>{{selecetedProfile.introduce}}</div>
                 <div>{{selecetedProfile.name}}</div>
-                <div><a>{{selecetedProfile.ig}}</a></div>
+                <div><a src>{{selecetedProfile.ig}}</a></div>
             </v-flex>
         </v-layout>
     </v-container>

@@ -1,8 +1,20 @@
 <template>
     <v-container fluid>
-        <v-col cols="12">
+        <v-col class="d-none d-md-block d-lg-block d-xl-block column" cols="12">
             <v-row class="white align-center justify-center">
-                <div class="navagation-button mx-12"
+                <div class="navagation-button web mx-12"
+                    :class="{'focusing-button': (activingButton == link ? true : false)}"
+                    v-for="link in links"
+                    :key="link"
+                    :label="link"
+                    @click="moveToNavigationLink(link)">
+                    {{link}}
+                </div>
+            </v-row>
+        </v-col>
+        <v-col class="d-md-none d-lg-none d-xl-none column" cols="12">
+            <v-row class="white justify-space-around pt-2">
+                <div class="navagation-button mobile"
                     :class="{'focusing-button': (activingButton == link ? true : false)}"
                     v-for="link in links"
                     :key="link"
@@ -47,6 +59,12 @@ export default {
     color: black;
     opacity: 40%;
     cursor: pointer;
+}
+.navagation-button.mobile{
+    font-size: 13pt;
+}
+.navagation-button.web {
+    font-size: 16pt;
 }
 .focusing-button {
     opacity: 100%;

@@ -38,3 +38,30 @@
 .v-toolbar__content {
     display: inline-block;
 }
+
+.v-content .v-content__wrap {
+    display: flex;
+}
+
+.apple-sandol-font {
+    font-size: 65px;
+    font-family: "Apple";
+    font-weight: 100;
+}
+.apple-sandol-font.web {
+    font-size: 65px;
+}
+.apple-sandol-font.mobile {
+    font-size: 25px;
+}
+.saithik-font {
+    color: black;
+    text-decoration: none;
+    font-family: 'Saithik';
+}
+.saithik-font.web {
+    font-size: 90px;
+}
+.saithik-font.mobile {
+    font-size: 40px;
+}

@@ -4,19 +4,19 @@
         <v-content>
             <router-view/>
         </v-content>
-        <footer-view/>
+        <!-- <footer-view/> -->
     </v-app>
 </template>
 
 <script>
 import HeaderView from '@/components/HeaderView.vue'
-import FooterView from '@/components/FooterView.vue'
+// import FooterView from '@/components/FooterView.vue'
 
 export default {
     name: 'App',
     components: {
         HeaderView,
-        FooterView
+        // FooterView
     },
     data: () => ({
         //

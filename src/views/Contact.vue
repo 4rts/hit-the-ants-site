@@ -1,29 +1,22 @@
 <template>
-    <span>sdfgd </span>
-    <!-- <v-form
-        ref="form"
-        v-model="valid"
-    >
-        <v-text-field
-            v-model="email"
-            :rules="emailRules"
-            label="E-mail"
-            required
-        ></v-text-field>
-        <v-text-field
-            v-model="subject"
-            :rules="nameRules"
-            label="Subject"
-            required
-        ></v-text-field>
-        <v-textarea
-          solo
-          name="input-7-4"
-          label="Solo textarea"
-        ></v-textarea>
-
-        <v-btn text large color="black">Submit</v-btn>
-    </v-form> -->
+    <v-container>
+        <v-layout class="d-md-none d-lg-none d-xl-none flex-wrap mx-2">
+            <v-flex class="text-field-container ">
+                <v-text-field label="Email" clearable></v-text-field>
+            </v-flex>
+            <v-flex class="text-field-container">
+                <v-text-field label="Subject" clearable></v-text-field>
+            </v-flex>
+            <v-flex class="text-area-container">
+                <v-textarea  name="content" label="Contents" clearable outlined></v-textarea>
+            </v-flex>
+            <v-flex>
+                <v-btn class="" outlined color="black">
+                    <v-icon left>mdi-pencil</v-icon> Edit
+                </v-btn>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
@@ -50,5 +43,12 @@ export default {
 </script>
 
 <style scoped>
-
+.text-field-container {
+    width: 100%;
+    height: 65px;
+}
+.text-area-container {
+    width: 100%;
+    height: auto;
+}
 </style>
