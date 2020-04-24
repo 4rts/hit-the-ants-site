@@ -60,7 +60,8 @@ export default {
                     name: '정진혁',
                     introduce: '열망과 욕망은 야망과 다르며 스스로의 주인이 되어 말과 행동을 일치시키고자 합니다. 각자의 행복도 집단의 미래도 본인 스스로의 주체적이고 욕망에 집중하는 개인에게 달렸습니다. 변화를 만들어갈 공동체를 이루고 사람들을 동참시켜 이끄는 데에서 큰 자부심과 행복을 느낍니다. 더 많은 사람의 일상을 변화시킬 수 있는 결과물로 세상에 작은 물결을 일으킬 수 있기를 꿈꿉니다.',
                     photo: '',
-                    basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhBlack.png?raw=true',
+                    basePhoto: '../assets/images/imgGhBlack.png',
+                    // basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhColor.png?raw=true',
                     email: '',
                     ig: 'https://www.instagram.com/g.nyuk/'

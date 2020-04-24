@@ -12,7 +12,7 @@
             </v-flex>
             <v-flex>
                 <v-btn class="" outlined color="black">
-                    <v-icon left>mdi-pencil</v-icon> Edit
+                    <v-icon left>mdi-pencil</v-icon> SEND
                 </v-btn>
             </v-flex>
         </v-layout>
