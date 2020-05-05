@@ -16,6 +16,7 @@ export default {
 .content-wrapper {
     text-align: center;
     padding-top: 60px;
+
 }
 
 

@@ -1,6 +1,6 @@
 
 <template>
-    <v-card class="mx-auto" max-width="344">
+    <v-card class="mx-auto" max-width="344" height="285px">
         <router-link to="/projects/detail">
         <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"/>
         <v-card-title text-decoration ="none">Collact</v-card-title>

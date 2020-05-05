@@ -25,10 +25,10 @@
                 Follow us
               </strong>
               <button class="footer-view-button">
-                <router-link to="/">Instagram</router-link>
+                <router-link to="https://www.instagram.com/hittheants/">Instagram</router-link>
               </button>
               <button class="footer-view-button">
-                <router-link to="/">FaceBook</router-link>
+                <router-link to="https://www.instagram.com/hittheants/">FaceBook</router-link>
               </button>
           </div>
         </v-card-title>
@@ -53,8 +53,13 @@ export default {
 <style scoped>
 .footer-upper-block{
   width: 100%;
-  height: 64pt;
+  height: 50px;
+
   background-color: white;
+}
+.footer-upper-block img{
+  background-color: white;
+  height: 50px;
 }
 .v-application .teal{
   background-color : black !important ;
@@ -67,15 +72,15 @@ export default {
   font-size: 16pt;
   font-family: 'Apple';
   font-weight: 700;
-  padding-right : 24pt;
+  padding-right : 24px;
 }
 .left-text{
-  font-size: 16pt;
+  font-size: 16px;
   font-family: 'Apple';
   font-weight: 400;
 }
 .right-title{
-  font-size: 16pt;
+  font-size: 16px;
   font-family: 'Apple';
   font-weight: 700;
 }
@@ -93,8 +98,9 @@ export default {
 }
 
 .py-2 {
+  
   background-color: black;
-  font-size: 10pt;
+  font-size: 10px;
 }
 
 
