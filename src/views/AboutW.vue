@@ -126,8 +126,7 @@ export default {
             this.offsetTop = e.target.scrollTop
         },
         onResize () {
-            var row = document.getElementById('row')
-            var container = document.getElementById('introduce-ants')
+
         }
     }
     
