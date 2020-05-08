@@ -24,18 +24,18 @@
               <strong class="subheading right-title">
                 Follow us
               </strong>
-              <button class="footer-view-button">
-                <router-link to="https://www.instagram.com/hittheants/">Instagram</router-link>
+              <button v-on:click ="popup" class="footer-view-button">
+                Instagram
               </button>
-              <button class="footer-view-button">
-                <router-link to="https://www.instagram.com/hittheants/">FaceBook</router-link>
+              <button v-on:click ="popup" class="footer-view-button">
+                FaceBook
               </button>
           </div>
         </v-card-title>
 
         <v-card-text class="py-2 text-center">
           {{ new Date().getFullYear() }} — 
-          <strong>ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts) E-mail:hittheants@gmail.com</strong>
+          <strong>ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts) E-mail:contact@hittheants.com</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -46,15 +46,22 @@
 
 <script>
 export default {
+  methods:{
+    popup : function() {
+      window.open('https://www.instagram.com/hittheants/', '_blank');
+    }
+  }
 
 }
 </script>
 
 <style scoped>
+.theme--dar.v-footer{
+  background-color: white;
+}
 .footer-upper-block{
   width: 100%;
   height: 50px;
-
   background-color: white;
 }
 .footer-upper-block img{

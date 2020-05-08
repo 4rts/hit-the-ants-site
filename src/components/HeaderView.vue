@@ -62,11 +62,14 @@ export default {
 }
 .navagation-button.mobile{
     font-size: 13pt;
+    opacity: 100;
 }
 .navagation-button.web {
+    opacity: 100;
     font-size: 16pt;
+
 }
 .focusing-button {
-    opacity: 100%;
+    opacity: 100 !important;
 }
 </style>

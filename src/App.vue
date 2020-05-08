@@ -2,7 +2,7 @@
     <v-app>
         <header-view/>
         <div v-if="!isMobile" style="min-height : 100%">
-            <v-container class="web-container" grid-list-md text-xs-center name = "web">
+            <v-container id="web-container" grid-list-md text-xs-center name = "web">
                 <router-view/>
             </v-container>
             <footer-view class="footer"/>
@@ -38,22 +38,28 @@ export default {
     },
     methods: {
         onResize () {
-            this.isMobile = window.innerWidth < 600
+            this.isMobile = window.innerWidth < 600;
+            // var web_container = document.getElementById('web-container')
+            // web_container.style.height = window.innerHeight - 30 + 'px'
         }
     }
 };
 </script>
 <style scoped>
-.web-container{
-    min-height: 100%;
+#web-container{
     max-width: 1000px;
     text-align: center;
-    width: 100%;
+    width: 80%;
+    height: fit-content;
+    min-height: 100%;
+    margin-bottom: 100px;
 }
-.web-container div{
+#web-container div{
     text-align: left;
 }
 .footer{
+    position: fixed;
+    bottom: 0;
     align-items: flex-end;
     overflow: hidden;    
     width: 100%;

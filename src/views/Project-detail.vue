@@ -7,8 +7,12 @@
                     Collact
                 </div>
                 <div class="left-text-subtitle">
-                    Date   January 11, 2019 <br>
-                    Tags   App Service
+                <div style="margin-right : 20px;  display : inline-block">           
+                    Date<br>Tags
+                    </div>
+                    <div style="display : inline-block">           
+                        January 11, 2019 <br>App Service
+                    </div>
                 </div>
             </div>
             <div class="right-block">
@@ -27,17 +31,22 @@
         </v-flex>
     </div>
     <div v-else>
-        <v-flex class="mt-4 mr-5 ml-5">
+        <div class="mt-4 mr-5 ml-5 title-block">
             <div class="title">
-                <img src="../assets/images/icPreview13Px.png">
+                <img v-on:click ="previous" src="../assets/images/icPreview13Px.png">
                 Collact
             </div>
-            <div class="subTitle">                  
-                Date   January 11, 2019 <br>
-                Tags   App Service</div>
+            <div class="subTitle">  
+                <div style="margin-right : 20px; display : inline-block">           
+                Date<br>Tags
+                </div>
+                <div style="display : inline-block">           
+                    January 11, 2019 <br>App Service
+                </div>
+            </div>
 
-        </v-flex>
-        <v-flex class="mt-3 ml-5 mr-5 introduce-project">
+        </div>
+        <v-flex class="mt-10 ml-5 mr-5 introduce-project">
             collact는 이 시대를 살아가는 젊은 아티스트들을 위한 온라인 
             공간을 만드는 프로젝트입니다. 누구나 크리에이터가 되는 시대. 
             창작의 진입 장벽이 낮아짐에 따라 미술 시장의 규모와 네트워킹의 니즈는
@@ -71,6 +80,9 @@ export default {
         },
         onScroll(e) {
             this.offsetTop = e.target.scrollTop
+        },
+        previous() {
+            this.$router.go(-1);
         }
     }
 }
@@ -83,6 +95,11 @@ export default {
     font-family: 'Apple';
     font-weight: 400;
     line-height: 23px;
+}
+.title-block{
+    width: 100%;
+    height: fit-content;
+    display: inline;
 }
 .title{
     font-size: 20px;

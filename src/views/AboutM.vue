@@ -54,8 +54,8 @@ export default {
                     // basePhoto: '../assets/images/imgGhBlack.png',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'g_nuk@instagram',
+                    email: 'g.nyuk@hittheAnts.com',
+                    instagram:'g_nyuk@instagram',
                     ig: 'https://www.instagram.com/g.nyuk/'
                 }, {
                     name: '박한빈',
@@ -63,8 +63,8 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHbBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHbColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'instagram@instagram',
+                    email: 'cactaceous@hittheAnts.com',
+                    instagram:'cactaceo_us@instagram',
                     ig: 'https://www.instagram.com/cactaceo_us/'
                 }, {
                     name: '손희덕',
@@ -72,8 +72,8 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHdBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHdColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'instagram@instagram',
+                    email: 'hdson07@hittheAnts.com',
+                    instagram:'hi_duckee@instagram',
                     ig: 'https://www.instagram.com/hi_duckee/'
                 }, {
                     name: '김주연',
@@ -81,16 +81,16 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJyBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJyColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'instagram@instagram',
+                    email: 'jooyon@hittheAnts.com',
+                    instagram:'yo0_lo0@instagram',
                     ig: 'https://www.instagram.com/yo0_lo0/'
                 }, {
                     name: '조민재',
                     introduce: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgMjBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgMjColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'instagram@instagram',
+                    email: 'finn.cho@hittheAnts.com',
+                    instagram:'finn.cho@instagram',
                     ig: 'https://www.instagram.com/finn.cho/'
                 }, {
                     name: '김지혜',
@@ -98,8 +98,8 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJhBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJhColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'instagram@instagram',
+                    email: 'jihyekim@hittheAnts.com',
+                    instagram:'jihyesss@instagram',
                     ig: 'https://www.instagram.com/jihyesss/'
                 }, {
                     name: '조현서',
@@ -107,8 +107,8 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHsBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHsColor.png?raw=true',
-                    email: 'emailAddress@hittheAnts.com',
-                    instagram:'instagram@instagram',
+                    email: 'hyunseocho@hittheAnts.com',
+                    instagram:'heum_ing_@instagram',
                     ig: 'https://www.instagram.com/heum_heum_/'
                 }
             ]

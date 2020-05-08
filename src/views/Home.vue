@@ -9,12 +9,13 @@
                 </div>
                     </div>
                     
-                <div class="mt-4 ml-12 home-line"
+                <div class="mt-4 ml-12 home-line d-inline-block"
                     v-for="(string, index) in webString"
                     :key="index">
-                    <span class="apple-sandol-font web">{{string.prefix}}</span>
-                    <router-link class="saithik-font web" :to="string.middle" style="color: black;"> {{string.middle}} </router-link>
-                    <span class="apple-sandol-font web">{{string.suffix}}</span>
+                        <span class="apple-sandol-font web">{{string.prefix}}</span>
+                        <router-link class="saithik-font web" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
+                        <span class="apple-sandol-font web">{{string.suffix}}</span>
+                        <br/>
                 </div>
             </v-flex>
             <div class="small-logo">
@@ -33,9 +34,9 @@
                     </div>
                 </v-flex>
                 <div class="d-inline-block" v-for="(string, index) in mobileString" :key="index">
-                    <div class="d-inline apple-sandol-font mobile">{{string.prefix}}</div>
-                    <router-link class="d-inline saithik-font mobile" :to="string.middle" style="color: black;"> {{string.middle}} </router-link>
-                    <div class="d-inline apple-sandol-font mobile">{{string.suffix}}</div>
+                    <span class="d-inline apple-sandol-font mobile">{{string.prefix}}</span>
+                    <router-link class="d-inline saithik-font mobile" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
+                    <span class="d-inline apple-sandol-font mobile">{{string.suffix}}</span>
                     <br/>
                 </div>
             </v-flex>
@@ -50,20 +51,20 @@ export default {
     data() {
         return {
             mobileString: [
-                {prefix: 'We belive in colaboation and',middle:'', suffix:''},
-                {prefix: 'working on the next', middle:'projects', suffix:'.'},
-                {prefix: 'If you want to know',middle:'', suffix:''},
-                {prefix: 'more', middle:'about', suffix:'our team,'},
-                {prefix: 'you’re more than welcome to',middle:'', suffix:''}, 
-                {prefix: '',middle:'contact', suffix:'us anytime.'}
+                {prefix: 'We believe in Collaboration and',middle:'', suffix:'',link:''},
+                {prefix: 'working on the next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'If you want to know',middle:'', suffix:'',link:''},
+                {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
+                {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
+                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'test/contact'}
             ],
             webString:[
-                {prefix: 'We belive in colaboation',middle:'', suffix:''},
-                {prefix : 'and working on the next', middle:'projects', suffix:'.'},
-                {prefix: 'If you want to know',middle:'', suffix:''},
-                {prefix: 'more', middle:'about', suffix:'our team,'},                
-                {prefix: 'you’re more than welcome to',middle:'', suffix:''}, 
-                {prefix: '',middle:'contact', suffix:'us anytime.'}            
+                {prefix: 'We believe in Collaboration and',middle:'', suffix:'',link:''},
+                {prefix: 'working on the next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'If you want to know',middle:'', suffix:'',link:''},
+                {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
+                {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
+                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'test/contact'}   
             ],
         }
     }
@@ -76,7 +77,7 @@ export default {
 .small-logo {
     position: fixed;
     left: 44px;
-    bottom: 40px;
+    bottom: 148px;
 }
 
 .image-content >div{
