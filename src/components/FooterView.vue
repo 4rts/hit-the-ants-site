@@ -1,44 +1,41 @@
 <template>
-  <div class = footer_offset>
-    <v-footer
-      dark
-      padless
-    >
-      <v-card
-        class="flex"
-        flat
-        tile
-      >
-        <div class="text-center footer-upper-block">
-            <img src="../assets/images/foorterAnts.png">
-        </div>
-        <v-card-title class=" teal text-center">
-            <strong class="subheading left-title" >
-              Hit the Ants
-            </strong>
-            <strong class="subheading left-text">
-              A Korean based Fucking Good Crew
-            </strong>
-            <v-spacer></v-spacer>
-            <div>
-              <strong class="subheading right-title">
-                Follow us
-              </strong>
-              <button v-on:click ="popup" class="footer-view-button">
-                Instagram
-              </button>
-              <button v-on:click ="popup" class="footer-view-button">
-                FaceBook
-              </button>
+  <div>
+    <div v-if="!isMobile" class="footer-upper-block ">
+        <img src="../assets/images/foorterAnts.png">
+    </div>
+    <div class = "footer-offset text-center">
+    <v-card-title class="upper-text" v-bind:class="{ 'text-size-m': isMobile }"
+      style="display : inline-flex">
+        <strong style="display : inline-flex;">
+            Hit the Ants
+          <div v-if="!isMobile" style="font-weight : 400; padding-left : 20px">
+            A Korean based Fucking Good Crew
           </div>
-        </v-card-title>
+        </strong>
+        <v-spacer></v-spacer>
+        <strong class="sns-container">
+            Follow us
+            <button v-on:click ="popup" style="color: #8c8c8c !important; margin-left : 10px ;margin-right : 10px;">
+              Instagram  
+            </button>
+            <button v-on:click ="popup" style="color: #8c8c8c !important; margin-right : 10px;">
+              FaceBook    
+            </button>
+        </strong>
+    </v-card-title>
 
-        <v-card-text class="py-2 text-center">
-          {{ new Date().getFullYear() }} — 
-          <strong>ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts) E-mail:contact@hittheants.com</strong>
-        </v-card-text>
-      </v-card>
-    </v-footer>
+    <div v-if="!isMobile" class="tail-text-w">
+      <v-flex>
+        {{ new Date().getFullYear() }} — ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts) E-mail:contact@hittheants.com
+      </v-flex>
+    </div>
+    <div v-else class="tail-text-w">  
+      <v-flex>
+        {{ new Date().getFullYear() }} — ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts)<br>
+         E-mail:contact@hittheants.com
+      </v-flex>
+    </div>
+  </div>
   </div>
 </template>
 
@@ -46,68 +43,93 @@
 
 <script>
 export default {
+  data: () => ({
+      isMobile: false
+  }),
+  beforeDestroy () {
+      if (typeof window !== 'undefined') {
+          window.removeEventListener('resize', this.onResize, { passive: true })
+      }
+  },
+  mounted () {
+      this.onResize()
+      window.addEventListener('resize', this.onResize, { passive: true })
+  },
   methods:{
     popup : function() {
       window.open('https://www.instagram.com/hittheants/', '_blank');
-    }
+    },
+    onResize () {
+        this.isMobile = window.innerWidth < 500
+    },
+    onScroll(e) {
+        this.offsetTop = e.target.scrollTop
+    },
   }
-
+    
 }
+
+
 </script>
 
 <style scoped>
-.theme--dar.v-footer{
-  background-color: white;
+.footer-offset{
+  background-color: black;
+  text-align: center;
+}
+.text-size-m{
+  font-size: 11px !important;
+}
+.tail-size-m{
+  font-size: 8px !important;
 }
 .footer-upper-block{
   width: 100%;
   height: 50px;
+  text-align: center;
   background-color: white;
 }
 .footer-upper-block img{
   background-color: white;
-  height: 50px;
+  height: 100%;
 }
-.v-application .teal{
-  background-color : black !important ;
-}
-.text-center{
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.left-title{
-  font-size: 16pt;
-  font-family: 'Apple';
-  font-weight: 700;
-  padding-right : 24px;
-}
-.left-text{
-  font-size: 16px;
-  font-family: 'Apple';
-  font-weight: 400;
-}
-.right-title{
+.upper-text{
+  padding: 0%;
+  color: white;
+  width: 80%;
+  max-width: 1440px;
   font-size: 16px;
   font-family: 'Apple';
   font-weight: 700;
+  display: inline-flex;
+
 }
-.footer-view-button{
-    width: 100px;
-    height: 30px;
-    margin: 0 25px;
-    font-family: 'Apple';
-    font-weight: 400;
-    color: #8c8c8c !important;
+.sns-container{
+  display: inline;
 }
-.footer-view-button a{
-  color : #8c8c8c;
-  text-decoration: none;
+.button{
+  margin: 1%;
+  color: #8c8c8c !important;
 }
 
-.py-2 {
-  
-  background-color: black;
+
+.tail-text-w{
   font-size: 10px;
+  color: white;
+  display: -moz-inline-grid;
+  height: fit-content;
+  padding: 0%;
+}
+.tail-text-m{
+  font-size: 8px;
+  color: white;
+  display: -moz-inline-grid;
+  height: fit-content;
+  padding: 0%;
+}
+.footer-view-button{
+  color : #8c8c8c;
+  text-decoration: none;
 }
 
 

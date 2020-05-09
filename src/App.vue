@@ -1,16 +1,20 @@
 <template>
     <v-app>
         <header-view/>
-        <div v-if="!isMobile" style="min-height : 100%">
+        <div v-if="!isMobile">
             <v-container id="web-container" grid-list-md text-xs-center name = "web">
                 <router-view/>
             </v-container>
             <footer-view class="footer"/>
 
         </div>
-        <v-container name ="mobile" v-else>
-            <router-view/>
-        </v-container>
+        <div v-else>
+            <v-container id="mobile-container" grid-list-md text-xs-center name = "mobile">                
+                <router-view/>
+            </v-container>
+            <footer-view class="footer"/>
+        </div>
+
     </v-app>
 </template>
 
@@ -40,29 +44,32 @@ export default {
         onResize () {
             this.isMobile = window.innerWidth < 600;
             // var web_container = document.getElementById('web-container')
-            // web_container.style.height = window.innerHeight - 30 + 'px'
+            // web_container.style.height = window.innerHeight + 'px'
         }
     }
 };
 </script>
 <style scoped>
 #web-container{
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
     width: 80%;
-    height: fit-content;
+    height : fit-content;
     min-height: 100%;
-    margin-bottom: 100px;
+}
+#mobile-container{
+    height : fit-content;
+    min-height: 100%;
 }
 #web-container div{
     text-align: left;
 }
 .footer{
-    position: fixed;
+    position: absolute;
+    left: 0;
     bottom: 0;
-    align-items: flex-end;
+    text-align: center;
     overflow: hidden;    
     width: 100%;
-    bottom:0;
 }
 </style>

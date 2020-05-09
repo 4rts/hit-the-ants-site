@@ -97,8 +97,7 @@ export default {
     line-height: 23px;
 }
 .title-block{
-    width: 100%;
-    height: fit-content;
+
     display: inline;
 }
 .title{
