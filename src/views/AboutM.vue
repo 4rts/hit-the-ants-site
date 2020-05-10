@@ -31,9 +31,9 @@
                     </div>
                 </div>
             </div>
-            <v-flex class="mt-4 ml-5 mr-4 introduce-ants">
-                {{memberList[selectedIndex].introduce}}
-            </v-flex>
+        </v-flex>
+        <v-flex class="mt-4 ml-5 mr-4 introduce-ants">
+            {{memberList[selectedIndex].introduce}}
         </v-flex>
     </v-layout>
 </template>
@@ -54,7 +54,7 @@ export default {
                     // basePhoto: '../assets/images/imgGhBlack.png',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgGhColor.png?raw=true',
-                    email: 'g.nyuk@hittheAnts.com',
+                    email: 'g.nyuk@hittheants.com',
                     instagram:'g_nyuk@instagram',
                     ig: 'https://www.instagram.com/g.nyuk/'
                 }, {
@@ -63,7 +63,7 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHbBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHbColor.png?raw=true',
-                    email: 'cactaceous@hittheAnts.com',
+                    email: 'cactaceous@hittheants.com',
                     instagram:'cactaceo_us@instagram',
                     ig: 'https://www.instagram.com/cactaceo_us/'
                 }, {
@@ -72,7 +72,7 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHdBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHdColor.png?raw=true',
-                    email: 'hdson07@hittheAnts.com',
+                    email: 'hdson07@hittheants.com',
                     instagram:'hi_duckee@instagram',
                     ig: 'https://www.instagram.com/hi_duckee/'
                 }, {
@@ -81,7 +81,7 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJyBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJyColor.png?raw=true',
-                    email: 'jooyon@hittheAnts.com',
+                    email: 'jooyon@hittheants.com',
                     instagram:'yo0_lo0@instagram',
                     ig: 'https://www.instagram.com/yo0_lo0/'
                 }, {
@@ -89,16 +89,16 @@ export default {
                     introduce: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgMjBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgMjColor.png?raw=true',
-                    email: 'finn.cho@hittheAnts.com',
+                    email: 'finn.cho@hittheants.com',
                     instagram:'finn.cho@instagram',
                     ig: 'https://www.instagram.com/finn.cho/'
                 }, {
                     name: '김지혜',
-                    introduce: '내가 만든 것이 세상을 움직일 수 있다? 라는 막연한 꿈을 안고 디자인 종사자가 된 개미. 혼자 작업할 때와 또다르게 사람들과 함께 일할 때 생기는 시너지에 매력을 느끼며 힛더앤츠에 깊은 애정을 갖고 살아가는 일개 일개미입니다.',
+                    introduce: '내가 만든 것이 세상을 움직일 수 있다? 라는 막연한 꿈을 안고 디자인 종사자가 된 개미. 혼자 작업할 때와 또다르게 사람들과 함께 일할 때 생기는 시너지에 매력을 느끼며 힛디앤츠에 깊은 애정을 갖고 살아가는 일개 일개미입니다.',
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJhBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgJhColor.png?raw=true',
-                    email: 'jihyekim@hittheAnts.com',
+                    email: 'jihyekim@hittheants.com',
                     instagram:'jihyesss@instagram',
                     ig: 'https://www.instagram.com/jihyesss/'
                 }, {
@@ -107,7 +107,7 @@ export default {
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHsBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHsColor.png?raw=true',
-                    email: 'hyunseocho@hittheAnts.com',
+                    email: 'hyunseocho@hittheants.com',
                     instagram:'heum_ing_@instagram',
                     ig: 'https://www.instagram.com/heum_heum_/'
                 }

@@ -18,7 +18,7 @@
             <button v-on:click ="popup" style="color: #8c8c8c !important; margin-left : 10px ;margin-right : 10px;">
               Instagram  
             </button>
-            <button v-on:click ="popup" style="color: #8c8c8c !important; margin-right : 10px;">
+            <button v-on:click ="popupM" style="color: #8c8c8c !important; margin-right : 10px;">
               FaceBook    
             </button>
         </strong>
@@ -26,12 +26,12 @@
 
     <div v-if="!isMobile" class="tail-text-w">
       <v-flex>
-        {{ new Date().getFullYear() }} — ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts) E-mail:contact@hittheants.com
+        {{ new Date().getFullYear() }} — ⓒAll Copyrights Reserved. 힛디앤츠(hittheants) E-mail:contact@hittheants.com
       </v-flex>
     </div>
     <div v-else class="tail-text-w">  
       <v-flex>
-        {{ new Date().getFullYear() }} — ⓒAll Copyrights Reserved. 힛디앤츠(HitTheAnts)<br>
+        {{ new Date().getFullYear() }} — ⓒAll Copyrights Reserved. 힛디앤츠(hittheants)<br>
          E-mail:contact@hittheants.com
       </v-flex>
     </div>
@@ -57,6 +57,9 @@ export default {
   },
   methods:{
     popup : function() {
+      window.open('https://www.instagram.com/hittheants/', '_blank');
+    },
+    popupM : function() {
       window.open('https://www.instagram.com/hittheants/', '_blank');
     },
     onResize () {

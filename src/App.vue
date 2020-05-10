@@ -1,19 +1,18 @@
 <template>
     <v-app>
         <header-view/>
-        <div v-if="!isMobile">
+        <div v-if="!isMobile" >
             <v-container id="web-container" grid-list-md text-xs-center name = "web">
                 <router-view/>
             </v-container>
-            <footer-view class="footer"/>
 
         </div>
-        <div v-else>
-            <v-container id="mobile-container" grid-list-md text-xs-center name = "mobile">                
+        <div v-else >
+            <v-container id="mobile-container" name = "mobile">                
                 <router-view/>
             </v-container>
-            <footer-view class="footer"/>
         </div>
+        <footer-view class="footer"/>
 
     </v-app>
 </template>
@@ -60,9 +59,13 @@ export default {
 #mobile-container{
     height : fit-content;
     min-height: 100%;
+    margin-bottom: 20%;
 }
 #web-container div{
     text-align: left;
+    margin-bottom: 20px;
+    margin-bottom: 20%;
+
 }
 .footer{
     position: absolute;

@@ -2,7 +2,7 @@
 <template>
     <v-card class="mx-auto" max-width="344" height="285px">
         <router-link class="card-title" to="/test/projects/detail">
-        <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"/>
+        <img src="../assets/images/collact.png" style="width: 100%; ">
         <v-card-title>Collact</v-card-title>
         </router-link>
     </v-card>

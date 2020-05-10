@@ -16,18 +16,18 @@
                 </div>
             </div>
             <div class="right-block">
-                <div class="right-text">
-                    collact는 이 시대를 살아가는 젊은 아티스트들을 위한 온라인 
-                    공간을 만드는 프로젝트입니다. 누구나 크리에이터가 되는 시대. 
-                    창작의 진입 장벽이 낮아짐에 따라 미술 시장의 규모와 네트워킹의 니즈는
-                    점점 증가하고 있지만, 아티스트를 발견하고 소통할 수 있는 창구는 아직 없습니다. 
-                    등등등 소개문구
+                <div class="right-text mb-10">
+                    "상상 속의 프로젝트를 함께 실현해나가는 공간"<br>
+                    새롭고도 꾸준하게, 독창적이고도 충실하게.<br>
+                    콜렉트는 다양한 분야의 능력 있는 사람들 간의 만남을 통해 서로의 시너지를 끌어올리고, <br>
+                    창조적인 프로젝트를 함께 기획하며 열정과 문화를 매개하는 협업 지향 플랫폼입니다.<br>
                 </div>
             </div>
         </v-flex>
-        <v-flex mt-20 style="weight:100%;">
-            <v-img class="projectImg" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"/>
-            <v-img class="projectImg" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"/>
+        <v-flex mt-20 style="width : 100%;">
+            <img src="../assets/images/collact1.png" style="width: 100%; ">
+            <img src="../assets/images/collact2.png" style="width: 100%; ">
+            <img src="../assets/images/collact3.png" style="width: 100%; ">
         </v-flex>
     </div>
     <div v-else>
@@ -46,14 +46,16 @@
             </div>
 
         </div>
-        <v-flex class="mt-10 ml-5 mr-5 introduce-project">
-            collact는 이 시대를 살아가는 젊은 아티스트들을 위한 온라인 
-            공간을 만드는 프로젝트입니다. 누구나 크리에이터가 되는 시대. 
-            창작의 진입 장벽이 낮아짐에 따라 미술 시장의 규모와 네트워킹의 니즈는
-            점점 증가하고 있지만, 아티스트를 발견하고 소통할 수 있는 창구는 아직 없습니다. 
-            등등등 소개문구
-            <v-img class="projectImg" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"/>
-            <v-img class="projectImg" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"/>
+        <v-flex class="mt-10 ml-5 mr-5 introduce-project mb-10">
+            "상상 속의 프로젝트를 함께 실현해나가는 공간"<br>
+            새롭고도 꾸준하게, 독창적이고도 충실하게.<br>
+            콜렉트는 다양한 분야의 능력 있는 사람들 간의 만남을 통해 서로의 시너지를 끌어올리고, <br>
+            창조적인 프로젝트를 함께 기획하며 열정과 문화를 매개하는 협업 지향 플랫폼입니다.<br>
+            <div>
+                <img src="../assets/images/collact1.png" style="width: 100%; ">
+                <img src="../assets/images/collact2.png" style="width: 100%; ">
+                <img src="../assets/images/collact2.png" style="width: 100%; ">
+            </div>
         </v-flex>
     </div>
 
@@ -152,7 +154,7 @@ export default {
     width: 70%;
 }
 .right-text{
-    width: 60%;
+    width: 100%;
     font-size: 18px;
     line-height: 30px;
     font-family: 'Apple';
