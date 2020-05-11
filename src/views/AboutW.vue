@@ -19,7 +19,7 @@
                 개미들로부터 시작하는 우주를 그립니다<br>
             </div>
         </v-flex>
-        <v-flex mt-20 style="overflow:auto;">
+        <v-flex mt-20 style="overflow: auto;text-align: -webkit-center;">
             <div id="row">
                 <div class="items" v-for="(member, index) in memberList" :key="index">
                     <div v-if="index == selectedIndex">
@@ -136,7 +136,7 @@ export default {
 .introduce-ants {
     width: 50%;
     font-size: 13px;
-    font-family: 'Apple';
+    font-family: 'APPLE SD Gothic Neo';
     font-weight: 400;
     line-height: 23px;
     float: right;
@@ -152,7 +152,7 @@ body {
 .left-text{
     font-size: 18px;
     line-height: 30px;
-    font-family: 'Apple';
+    font-family: 'APPLE SD Gothic Neo';
     float: left;
     width: 40%;
     opacity: 0.4;
@@ -161,14 +161,14 @@ body {
 .right-text{
     font-size: 18px;
     line-height: 30px;
-    font-family: 'Apple';
+    font-family: 'APPLE SD Gothic Neo';
     float: right;
-    width: 40%;
+    width: 50%;
 }
 .name {
     margin-bottom: 20px;
     font-size: 14px;
-    font-family: 'Apple';
+    font-family: 'APPLE SD Gothic Neo';
     font-weight: 400;
     width: fit-content;
     float: left;
@@ -178,7 +178,7 @@ body {
 .email {
     padding-right: 14px;
     font-size: 10px;
-    font-family: 'Apple';
+    font-family: 'APPLE SD Gothic Neo';
     font-weight: 400;
     color: brownishGrey;
     width: fit-content;
@@ -191,7 +191,7 @@ body {
     overflow-y: hidden;
     padding: 10px 10px 5px;
     background: transparent;
-    width: 1000px;
+    width: 1050px;
 }
 
 #row .items {

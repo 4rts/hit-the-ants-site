@@ -102,7 +102,7 @@ export default {
   width: 80%;
   max-width: 1440px;
   font-size: 16px;
-  font-family: 'Apple';
+  font-family: 'APPLE SD Gothic Neo';
   font-weight: 700;
   display: inline-flex;
 

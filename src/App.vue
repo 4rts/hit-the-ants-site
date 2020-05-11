@@ -41,7 +41,7 @@ export default {
     },
     methods: {
         onResize () {
-            this.isMobile = window.innerWidth < 600;
+            this.isMobile = window.innerWidth < 1000;
             // var web_container = document.getElementById('web-container')
             // web_container.style.height = window.innerHeight + 'px'
         }
