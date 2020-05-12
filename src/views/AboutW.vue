@@ -187,6 +187,8 @@ body {
 }
 #row {
     white-space: nowrap;/* 가로스크롤시 중요한 속성 */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     overflow-x: auto;
     overflow-y: hidden;
     padding: 10px 10px 5px;
@@ -240,5 +242,8 @@ body {
     border-radius: 3px;
     font-weight: bold;
     background-color: #efefef;
+}
+#row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }
 </style>
