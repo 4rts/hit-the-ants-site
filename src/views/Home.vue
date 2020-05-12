@@ -52,54 +52,16 @@
                     v-for="(string, index) in webString"
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font pad ml-2" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
+                        <router-link class="saithik-font web ml-2" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
                         {{string.suffix}}</v-flex>
-            </span>
+                </span>
+                <div class="small-logo">
+                    <img src="../assets/images/logoSymbol.png">
+                </div>
             </v-flex>
         </div>
     </v-layout>
     
-    <!-- <v-container class="d-flex flex-column pa-0">
-        <v-layout class="d-none d-md-block d-lg-block d-xl-block column web" style="line-height : 70px;">
-            <v-flex>
-                <div class="mt-2 ml-12 image-content">
-                    <div class="apple-sandol-font web">
-                        Hi there, we are 
-                        <img src="../assets/images/hittheants.png" style = "height: 100px; vertical-align: middle;">
-                </div>
-                    </div>
-                    
-                <span class="mt-4 ml-12 home-line d-inline-block"
-                    v-for="(string, index) in webString"
-                    :key="index">
-                        <span class="apple-sandol-font web">{{string.prefix}}
-                        <router-link class="saithik-font web" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
-                        {{string.suffix}}</span>
-                </span>
-            </v-flex>
-            <div class="small-logo">
-                <img src="../assets/images/logoSymbol.png">
-            </div>
-        </v-layout>
-
-        <v-layout class="d-md-none d-lg-none d-xl-none apple-sandol-font mobile home-line">
-            <v-flex style="margin-bottom: auto; padding: 20px">
-                <v-flex class="d-flex mb-4">
-                    <div class=" d-inline-flex align-end">Hi there,<br>  </div>
-                </v-flex>
-                <v-flex class="d-flex mb-4">
-                    <div>
-                        we are<img class="d-inline-flex ml-3" src="../assets/images/hittheants.png" style="height: 51px; vertical-align: middle;">
-                    </div>
-                </v-flex>
-                <span class="d-inline-block" v-for="(string, index) in mobileString" :key="index">
-                    <span class="d-inline apple-sandol-font mobile">{{string.prefix}}
-                    <router-link class="d-inline saithik-font mobile" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
-                    {{string.suffix}}</span>
-                </span>
-            </v-flex>
-        </v-layout>
-    </v-container> -->
 </template>
 
 <script>
@@ -156,7 +118,7 @@ export default {
 .small-logo {
     position: fixed;
     left: 44px;
-    bottom: 0px;
+    bottom: 100px;
 }
 
 .image-content >div{

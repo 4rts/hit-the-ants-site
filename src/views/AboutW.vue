@@ -1,6 +1,6 @@
 <template>
     <v-layout v-scroll:#scroll-target="onScroll" column>
-        <v-flex class="mt-4 ml-5 text-block" style="width : 100%" >
+        <v-flex class="mt-4 text-block" style="width : 100%" >
             <div class="left-text" >
                 “행복의 비결은 현재의 순간을 즐기는 것,<br>
                 지금 자기 앞에 있는 일에 몰두하는 것, 땅 위를 걷는 것”<br>
@@ -71,7 +71,7 @@ export default {
                     ig: 'https://www.instagram.com/cactaceo_us/'
                 }, {
                     name: '손희덕',
-                    introduce: '"많이 보고, 많이 겪고, 많이 공부하는 것은 배움의 세 기둥이다." 저는 새로운 것에 흥미를 느끼고 부딪히며 배워가는 개발자 입니다.\n공부하는 것을 즐기고, 딱딱하지 않은 공부를 좋아합니다. 재미있는 일이 있다면, 그곳에 제가 있을 것입니다.\n흥미로운 프로젝트가 있다면 저를 찾으세요.',
+                    introduce: '"많이 보고, 많이 겪고, 많이 공부하는 것은 배움의 세 기둥이다."\n 저는 새로운 것에 흥미를 느끼고 부딪히며 배워가는 개발자 입니다.\n공부하는 것을 즐기고, 딱딱하지 않은 공부를 좋아합니다. 재미있는 일이 있다면, 그곳에 제가 있을 것입니다.',
                     photo: '',
                     basePhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHdBlack.png?raw=true',
                     selectedPhoto: 'https://github.com/HITTHEANTS/hit-the-ants-site/blob/master/src/assets/images/imgHdColor.png?raw=true',

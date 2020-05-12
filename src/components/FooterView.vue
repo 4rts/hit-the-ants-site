@@ -15,10 +15,10 @@
         <v-spacer></v-spacer>
         <strong class="sns-container">
             Follow us
-            <button v-on:click ="popup" style="color: #8c8c8c !important; margin-left : 10px ;margin-right : 10px;">
+            <button v-on:click ="popup" style="color: #8c8c8c !important; margin-left : 10px ;margin-right : 10px; font-weight : 400;">
               Instagram  
             </button>
-            <button v-on:click ="popupM" style="color: #8c8c8c !important; margin-right : 10px;">
+            <button v-on:click ="popupM" style="color: #8c8c8c !important; margin-right : 10px;font-weight : 400;">
               FaceBook    
             </button>
         </strong>

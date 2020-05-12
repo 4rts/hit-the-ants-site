@@ -16,11 +16,11 @@
             땅 위에 남기는 미소한 점의 자취,<br>
             개미들로부터 시작하는 우주를 그립니다<br>
         </v-flex>
+        <v-flex class="mt-7 ml-5">
+                <div class="name">{{memberList[selectedIndex].name}}</div>
+                <div class="email">{{memberList[selectedIndex].email}}<br>{{memberList[selectedIndex].instagram}}</div>
+        </v-flex>
         <v-flex mt-20 style="overflow:auto">
-            <v-flex class="mt-7 ml-5">
-                    <div class="name">{{memberList[selectedIndex].name}}</div>
-                    <div class="email">{{memberList[selectedIndex].email}}<br>{{memberList[selectedIndex].instagram}}</div>
-            </v-flex>
             <div id="row">
                 <div class="items" v-for="(member, index) in memberList" :key="index">
                     <div v-if="index == selectedIndex">
@@ -71,7 +71,7 @@ export default {
                     ig: 'https://www.instagram.com/cactaceo_us/'
                 }, {
                     name: '손희덕',
-                    introduce: '"많이 보고, 많이 겪고, 많이 공부하는 것은 배움의 세 기둥이다." 저는 새로운 것에 흥미를 느끼고 부딪히며 배워가는 개발자 입니다.\n공부하는 것을 즐기고, 딱딱하지 않은 공부를 좋아합니다. 재미있는 일이 있다면, 그곳에 제가 있을 것입니다.\n흥미로운 프로젝트가 있다면 저를 찾으세요.',
+                    introduce: '"많이 보고, 많이 겪고, 많이 공부하는 것은 배움의 세 기둥이다." 저는 새로운 것에 흥미를 느끼고 부딪히며 배워가는 개발자 입니다.공부하는 것을 즐기고, 딱딱하지 않은 공부를 좋아합니다. 재미있는 일이 있다면, 그곳에 제가 있을 것입니다.',
                     photo: '',
                     // basePhoto: '../assets/images/imgHdBlack.png',
                     // selectedPhoto: '../assets/images/imgHdColor.png',
