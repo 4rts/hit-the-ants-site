@@ -47,7 +47,7 @@ export default {
     width: 50%;
 }
 .apple-sandol-font {
-    font-family: "APPLE SD Gothic Neo";
+    font-family: "APPLE SD Gothic Neo",'Apple';
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;

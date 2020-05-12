@@ -53,7 +53,7 @@ export default {
 <style scoped>
 .navagation-button {
     font-size: 16pt;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     background: none;
     color: black;

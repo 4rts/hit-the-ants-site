@@ -147,7 +147,7 @@ export default {
 <style scoped>
 .introduce-ants {
     font-size: 13px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     line-height: 23px;
 }
@@ -157,7 +157,7 @@ body {
 }
 .name {
     font-size: 13px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     width: fit-content;
     float: left;
@@ -166,7 +166,7 @@ body {
 .email {
     padding-right: 10px;
     font-size: 10px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     color: brownishGrey;
     float :right;

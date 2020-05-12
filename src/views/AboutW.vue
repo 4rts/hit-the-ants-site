@@ -136,7 +136,7 @@ export default {
 .introduce-ants {
     width: 50%;
     font-size: 13px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     line-height: 23px;
     float: right;
@@ -152,7 +152,7 @@ body {
 .left-text{
     font-size: 18px;
     line-height: 30px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     float: left;
     width: 40%;
     opacity: 0.4;
@@ -161,14 +161,14 @@ body {
 .right-text{
     font-size: 18px;
     line-height: 30px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     float: right;
     width: 50%;
 }
 .name {
     margin-bottom: 20px;
     font-size: 14px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     width: fit-content;
     float: left;
@@ -178,7 +178,7 @@ body {
 .email {
     padding-right: 14px;
     font-size: 10px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     color: brownishGrey;
     width: fit-content;

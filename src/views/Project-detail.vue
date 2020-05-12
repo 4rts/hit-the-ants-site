@@ -94,7 +94,7 @@ export default {
 
 .introduce-project {
     font-size: 13px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     line-height: 23px;
 }
@@ -104,7 +104,7 @@ export default {
 }
 .title{
     font-size: 20px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 700;
     width: fit-content;
     float: left;
@@ -121,7 +121,7 @@ export default {
     margin: 10px;
     padding-right: 13px;
     font-size: 10px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     color: brownishGrey;
     float :right;
@@ -134,7 +134,7 @@ export default {
     margin-bottom: 20px;
 }
 .left-text{
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
     float: left;
     width: 30%;
 }
@@ -157,7 +157,7 @@ export default {
     width: 100%;
     font-size: 18px;
     line-height: 30px;
-    font-family: 'APPLE SD Gothic Neo';
+    font-family: 'APPLE SD Gothic Neo','Apple';
 }
 .img-block{
     margin-top: 30px;
