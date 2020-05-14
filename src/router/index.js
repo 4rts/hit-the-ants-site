@@ -1,37 +1,34 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// import emailjs from 'emailjs-com';
 
+// Vue.use(emailjs)
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: '',
+    name: 'HOME',
     component: () => import('../views/Home.vue')
 
   },
   {
-    path: '/test/',
-    name: 'HOME',
-    component: () => import('../views/Home.vue')
-  },
-  {
-    path: '/test/about',
+    path: '/about',
     name: 'ABOUT',
     component: () => import('../views/About.vue')
   },
   {
-    path: '/test/projects',
+    path: '/projects',
     name: 'PROJECTS',
     component: () => import('../views/Projects.vue')
   },
   {
-    path: '/test/projects/detail',
+    path: '/projects/detail',
     name: 'project-detail',
     component: () => import('../views/Project-detail.vue')
   },
   {
-    path: '/test/contact',
+    path: '/contact',
     name: 'CONTACT',
     component: () => import('../views/Contact.vue')
   },
@@ -41,8 +38,11 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-//   base: process.env.BASE_URL,
+  base: process.env.BASE_URL,
   routes
+  
 })
+
+
 
 export default router

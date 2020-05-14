@@ -73,25 +73,25 @@ export default {
             view : 'mobile',
             mobileString: [
                 {prefix: 'We believe in Collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
-                {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
+                {prefix: 'more', middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
-                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'test/contact'}
+                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'contact'}
             ],
             webString:[
                 {prefix: 'We believe in Collaboration',middle:'', suffix:'',link:''},
-                {prefix: 'and working on next', middle:'projects', suffix:'.',link : 'test/projects'},
-                {prefix: 'If you want to know more',middle:'about', suffix:'our team,',link : 'test/about'},
-                {prefix: 'you’re more than welcome to',middle:'contact', suffix:'us anytime.', link : 'test/contact'}   
+                {prefix: 'and working on next', middle:'projects', suffix:'.',link : 'projects'},
+                {prefix: 'If you want to know more',middle:'about', suffix:'our team,',link : 'about'},
+                {prefix: 'you’re more than welcome to',middle:'contact', suffix:'us anytime.', link : 'contact'}   
             ],
             padString:[
                 {prefix: 'We believe in Collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
-                {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
+                {prefix: 'more', middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
-                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'test/contact'}   
+                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'contact'}   
             ],
         }
     },
