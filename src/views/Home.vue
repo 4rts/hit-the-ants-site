@@ -1,58 +1,52 @@
 <template>
     <v-layout v-scroll:#scroll-target="onScroll" column>
         <div v-if="view === 'mobile'">
-            <v-flex class="apple-sandol-font mobile ml-5">
-                <v-flex class="d-flex mb-4">
+            <v-flex class="apple-sandol-font mobile" style="margin-left : 10px; line-height : 55px;">
+                <v-flex class="d-flex">
                     <div class="d-inline-flex align-end">Hi there,<br>  </div>
                 </v-flex>
-                <v-flex class="d-flex mb-4">
+                <v-flex class="d-flex" style="height : 55px;">
                     <div>
                         we are<img class="d-inline-flex ml-3" src="../assets/images/hittheants.png" style="height: 52px; vertical-align: middle;">
                     </div>
                 </v-flex>
-                <span class="mt-4 d-inline"
-                    v-for="(string, index) in mobileString"
+                <span class="d-inline" 
+                    v-for="(string, index) in mobileString" style="line-height : 52px;"
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font mobile ml-2" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
+                        <router-link class="saithik-font mobile" :to="string.link" style="color: black;">{{string.middle}}</router-link>
                         {{string.suffix}}</v-flex>
             </span>
             </v-flex>
         </div>
         <div v-if="view === 'pad'">
             <v-flex class="apple-sandol-font pad ml-5">
-                <v-flex class="d-flex mb-4">
-                    <div class="d-inline-flex align-end">Hi there,<br>  </div>
+                <v-flex class="d-flex">
+                    <div class="d-inline-flex align-end">Hi ther, we are </div>
+                    <img class="d-inline-flex ml-3" src="../assets/images/hittheants.png" style="height: 70px; vertical-align: middle;">
                 </v-flex>
-                <v-flex class="d-flex mb-4">
-                    <div>
-                        we are<img class="d-inline-flex ml-3" src="../assets/images/hittheants.png" style="height: 80px; vertical-align: middle;">
-                    </div>
-                </v-flex>
-                <span class="mt-4  home-line d-inline"
-                    v-for="(string, index) in padString"
+   
+                <span class="home-line d-inline"
+                    v-for="(string, index) in padString" style="line-height: 70px;"
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font pad ml-2" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
+                        <router-link class="saithik-font pad" :to="string.link" style="color: black;">{{string.middle}}</router-link>
                         {{string.suffix}}</v-flex>
             </span>
             </v-flex>
         </div>
         <div v-if="view === 'window'">
             <v-flex class="apple-sandol-font web ml-5">
-                <v-flex class="d-flex">
+                <v-flex class="d-flex" style="height: 80px;">
                     <div class="d-inline-flex align-end">Hi there, we are  </div>
-                <img class="d-inline-flex ml-3" src="../assets/images/hittheants.png" style="height: 100px; vertical-align: middle;">
+                    <img class="d-inline-flex ml-3" src="../assets/images/hittheants.png" style="height: 90px; vertical-align: middle;">
                 </v-flex>
-                <v-flex class="d-flex mb-4">
-                    <div>
-                    </div>
-                </v-flex>
-                <span class="mt-4  home-line d-inline"
+
+                <span class="mt-4  home-line d-inline" style=" line-height: 68px;"
                     v-for="(string, index) in webString"
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font web ml-2" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
+                        <router-link class="saithik-font web" :to="string.link" style="color: black;"> {{string.middle}} </router-link>
                         {{string.suffix}}</v-flex>
                 </span>
                 <div class="small-logo">
@@ -72,22 +66,22 @@ export default {
         return {
             view : 'mobile',
             mobileString: [
-                {prefix: 'We believe in Collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'projects'},
+                {prefix: 'We believe in collaboration and',middle:'', suffix:'',link:''},
+                {prefix: 'working on next', middle:'projects.', suffix:'',link : 'projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
                 {prefix: 'more', middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
                 {prefix: '',middle:'contact', suffix:'us anytime.', link : 'contact'}
             ],
             webString:[
-                {prefix: 'We believe in Collaboration',middle:'', suffix:'',link:''},
-                {prefix: 'and working on next', middle:'projects', suffix:'.',link : 'projects'},
+                {prefix: 'We believe in collaboration',middle:'', suffix:'',link:''},
+                {prefix: 'and working on next', middle:'projects.', suffix:'',link : 'projects'},
                 {prefix: 'If you want to know more',middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'contact', suffix:'us anytime.', link : 'contact'}   
             ],
             padString:[
-                {prefix: 'We believe in Collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'projects'},
+                {prefix: 'We believe in collaboration and',middle:'', suffix:'',link:''},
+                {prefix: 'working on next', middle:'projects.', suffix:'',link : 'projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
                 {prefix: 'more', middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
@@ -115,6 +109,9 @@ export default {
 }
 </script>
 <style scoped>
+.saithik-font{
+    vertical-align: initial;
+}
 .small-logo {
     position: fixed;
     left: 44px;

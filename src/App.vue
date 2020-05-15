@@ -50,13 +50,15 @@ export default {
 </script>
 <style scoped>
 #web-container{
-    max-width: 1200px;
+    margin-top: 20px;
+    max-width: 1050px;
     text-align: center;
     width: 80%;
     height : fit-content;
     min-height: 100%;
 }
 #mobile-container{
+    margin-top: 20px;
     height : fit-content;
     min-height: 100%;
     margin-bottom: 20%;

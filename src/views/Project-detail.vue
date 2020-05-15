@@ -4,17 +4,17 @@
         <v-flex class="mt-4 ml-5 text-block" style="width : 100%; height : 100%" >
             <div class="left-text">
                 <div class="left-text-title">
-                    Collact
+                    COLLACT
                 </div>
                 <div class="left-text-subtitle">
-                <div style="margin-right : 20px;  display : inline-block">           
-                    Date<br>Tags
-                    </div>
-                    <div style="display : inline-block">           
-                        January 11, 2019 <br>App Service
+                    <div style="margin-right : 20px;  display : inline-block">           
+                        DATE<br>TAGS
+                        </div>
+                        <div style="display : inline-block">           
+                            January 11, 2019 <br>App Service
+                        </div>
                     </div>
                 </div>
-            </div>
             <div class="right-block">
                 <div class="right-text mb-10">
                     "상상 속의 프로젝트를 함께 실현해나가는 공간"<br>
@@ -24,21 +24,21 @@
                 </div>
             </div>
         </v-flex>
-        <v-flex mt-20 style="width : 100%;">
+        <v-flex style="width : 100%; margin-top : 30px;">
             <img src="../assets/images/collact1.png" style="width: 100%; ">
             <img src="../assets/images/collact2.png" style="width: 100%; ">
-            <img src="../assets/images/collact3.png" style="width: 100%; ">
+            <img src="../assets/images/collact3.png" style="width: 100%;margin-top: 50px;">
         </v-flex>
     </div>
     <div v-else>
-        <div class="mt-4 mr-5 ml-5 title-block">
+        <div class="mt-4 ml-3 mr-5  title-block">
             <div class="title">
                 <img v-on:click ="previous" src="../assets/images/icPreview13Px.png">
                 Collact
             </div>
             <div class="subTitle">  
                 <div style="margin-right : 20px; display : inline-block">           
-                Date<br>Tags
+                DATE<br>TAGS
                 </div>
                 <div style="display : inline-block">           
                     January 11, 2019 <br>App Service
@@ -46,7 +46,7 @@
             </div>
 
         </div>
-        <v-flex class="mt-10 ml-5 mr-5 introduce-project mb-10">
+        <v-flex class=" ml-3 mr-3 introduce-project mb-10">
             "상상 속의 프로젝트를 함께 실현해나가는 공간"<br>
             새롭고도 꾸준하게, 독창적이고도 충실하게.<br>
             콜렉트는 다양한 분야의 능력 있는 사람들 간의 만남을 통해 서로의 시너지를 끌어올리고, <br>
@@ -54,7 +54,7 @@
             <div>
                 <img src="../assets/images/collact1.png" style="width: 100%; ">
                 <img src="../assets/images/collact2.png" style="width: 100%; ">
-                <img src="../assets/images/collact2.png" style="width: 100%; ">
+                <img src="../assets/images/collact3.png" style="width: 100%;margin-top: 20px;">
             </div>
         </v-flex>
     </div>
@@ -93,6 +93,7 @@ export default {
 <style scoped>
 
 .introduce-project {
+    padding-top: 60px;
     font-size: 13px;
     font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
@@ -113,17 +114,16 @@ export default {
 }
 .title img{
     width: 13px;
-    height: 24px;
+    height: 20px;
     vertical-align: middle;
-    margin: 10px;
+    margin-left: 20px;
 }
 .subTitle{
-    margin: 10px;
     padding-right: 13px;
     font-size: 10px;
     font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
-    color: brownishGrey;
+    color: rgb(102, 102, 102);
     float :right;
     width: fit-content;
 }
@@ -139,14 +139,14 @@ export default {
     width: 30%;
 }
 .left-text-title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 .left-text-subtitle{
     font-size: 16px;
     font-weight: 400;
-    opacity: 40%;
+    color: rgb(102, 102, 102);
 }
 .right-block{
 
@@ -155,9 +155,10 @@ export default {
 }
 .right-text{
     width: 100%;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 25px;
     font-family: 'APPLE SD Gothic Neo','Apple';
+    font-size: 14px;
 }
 .img-block{
     margin-top: 30px;

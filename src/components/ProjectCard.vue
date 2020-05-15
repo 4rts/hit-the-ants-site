@@ -1,6 +1,6 @@
 
 <template>
-    <v-card class="mx-auto" max-width="344" height="285px">
+    <v-card class="mx-auto" max-width="344" height="320px">
         <router-link class="card-title" to="/projects/detail">
         <img src="../assets/images/collact.png" style="width: 100%; ">
         <v-card-title>Collact</v-card-title>

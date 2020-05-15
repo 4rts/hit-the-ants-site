@@ -1,5 +1,5 @@
 <template>
-    <v-layout v-scroll:#scroll-target="onScroll" column>
+    <v-layout v-scroll:#scroll-target="onScroll" column class="ml-3 mr-3">
         <v-flex class="text-field-container ">
             <v-text-field label="Email" clearable></v-text-field>
         </v-flex>
@@ -7,7 +7,7 @@
             <v-text-field label="Subject" clearable></v-text-field>
         </v-flex>
         <v-flex class="text-area-container">
-            <v-textarea  name="content" label="Contents" clearable outlined height="600px"></v-textarea>
+            <v-textarea  name="content" outlined color="white" label="Contents"  height="350px"></v-textarea>
         </v-flex>
         <div v-if="!isMobile">
              <v-flex style="text-align: right;">

@@ -5,12 +5,9 @@
     </div>
     <div class = "footer-offset text-center">
     <v-card-title class="upper-text" v-bind:class="{ 'text-size-m': isMobile }"
-      style="display : inline-flex">
+      style="display : inline-flex padding-left: 22px; padding-right : 22px">
         <strong style="display : inline-flex;">
             Hit the Ants
-          <div v-if="!isMobile" style="font-weight : 400; padding-left : 20px">
-            A Korean based Fucking Good Crew
-          </div>
         </strong>
         <v-spacer></v-spacer>
         <strong class="sns-container">
@@ -96,8 +93,10 @@ export default {
 .upper-text{
   padding: 0%;
   color: white;
-  width: 80%;
-  max-width: 1440px;
+  padding-left: 22px;
+  padding-right: 22px;
+  width: 100%;
+  max-width: 800px;
   font-size: 16px;
   font-family: 'APPLE SD Gothic Neo','Apple';
   font-weight: 700;
@@ -125,7 +124,6 @@ export default {
   color: white;
   display: -moz-inline-grid;
   height: fit-content;
-  padding: 0%;
 }
 .footer-view-button{
   color : #8c8c8c;
