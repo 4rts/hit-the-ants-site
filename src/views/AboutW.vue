@@ -23,10 +23,10 @@
             <div id="row">
                 <div class="items" v-for="(member, index) in memberList" :key="index">
                     <div v-if="index == selectedIndex">
-                        <img :src="member.selectedPhoto" v-on:click="selectedIndex = index">
+                        <img :src="member.selectedPhoto" v-on:click="selectedIndex = index" style="width : 140px">
                     </div>
                     <div v-else>
-                        <img :src="member.basePhoto" v-on:click="selectedIndex = index">
+                        <img :src="member.basePhoto" v-on:click="selectedIndex = index" style="width : 140px">
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ export default {
 <style scoped>
 .introduce-ants {
     width: 50%;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'APPLE SD Gothic Neo','Apple';
     font-weight: 400;
     line-height: 23px;
@@ -163,17 +163,18 @@ body {
     width: 100%;
 }
 .left-text{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 23px;
     font-family: 'APPLE SD Gothic Neo','Apple';
     float: left;
     width: 40%;
     margin-right: 10%;
     float: left;
+    color: rgb(120, 120, 120);
 }
 .right-text{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 23px;
     font-family: 'APPLE SD Gothic Neo','Apple';
     float: right;
     width: 50%;
@@ -205,7 +206,7 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     background: transparent;
-    width: 1050px;
+    max-width: 1050px;
 }
 
 #row .items {
@@ -213,7 +214,7 @@ body {
     margin-right: 5px;
 }
 #row .items >img{
-    width : 78pt;
+    width : 140px;
 }
 
 

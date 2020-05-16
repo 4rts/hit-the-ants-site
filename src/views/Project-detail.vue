@@ -31,10 +31,9 @@
         </v-flex>
     </div>
     <div v-else>
-        <div class="mt-4 ml-3 mr-5  title-block">
+        <div class="mt-5 ml-3 mr-5  title-block">
             <div class="title">
-                <img v-on:click ="previous" src="../assets/images/icPreview13Px.png">
-                Collact
+                COLLACT
             </div>
             <div class="subTitle">  
                 <div style="margin-right : 20px; display : inline-block">           
@@ -156,7 +155,7 @@ export default {
 .right-text{
     width: 100%;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 23px;
     font-family: 'APPLE SD Gothic Neo','Apple';
     font-size: 14px;
 }

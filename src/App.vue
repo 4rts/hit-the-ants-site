@@ -53,7 +53,7 @@ export default {
     margin-top: 20px;
     max-width: 1050px;
     text-align: center;
-    width: 80%;
+    width: 100%;
     height : fit-content;
     min-height: 100%;
 }

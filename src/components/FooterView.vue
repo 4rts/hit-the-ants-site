@@ -81,6 +81,8 @@ export default {
   font-size: 8px !important;
 }
 .footer-upper-block{
+  margin-bottom: 20px;
+
   width: 100%;
   height: 50px;
   text-align: center;
@@ -91,12 +93,13 @@ export default {
   height: 100%;
 }
 .upper-text{
+  margin-top: 15px;
   padding: 0%;
   color: white;
   padding-left: 22px;
   padding-right: 22px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1050px;
   font-size: 16px;
   font-family: 'APPLE SD Gothic Neo','Apple';
   font-weight: 700;

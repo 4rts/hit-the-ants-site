@@ -7,28 +7,34 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '',
+    path: '/',
     name: 'HOME',
     component: () => import('../views/Home.vue')
 
   },
   {
-    path: '/about',
+    path: '/test',
+    name: 'HOME',
+    component: () => import('../views/Home.vue')
+
+  },
+  {
+    path: '/test/about',
     name: 'ABOUT',
     component: () => import('../views/About.vue')
   },
   {
-    path: '/projects',
+    path: '/test/projects',
     name: 'PROJECTS',
     component: () => import('../views/Projects.vue')
   },
   {
-    path: '/projects/detail',
+    path: '/test/projects/detail',
     name: 'project-detail',
     component: () => import('../views/Project-detail.vue')
   },
   {
-    path: '/contact',
+    path: '/test/contact',
     name: 'CONTACT',
     component: () => import('../views/Contact.vue')
   },

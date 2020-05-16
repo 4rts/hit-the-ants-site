@@ -1,6 +1,6 @@
 <template>
     <v-layout v-scroll:#scroll-target="onScroll" column>
-        <v-flex class="ml-3 introduce-ants">
+        <v-flex class="ml-3 introduce-ants" style="color: rgb(120, 120, 120);">
             “행복의 비결은 현재의 순간을 즐기는 것,<br>
             지금 자기 앞에 있는 일에 몰두하는 것, 땅 위를 걷는 것”<br>
             -베르나르 베르베르 ‘개미’ 중-
@@ -24,10 +24,10 @@
             <div id="row">
                 <div class="items" v-for="(member, index) in memberList" :key="index">
                     <div v-if="index == selectedIndex">
-                        <img :src="member.selectedPhoto" v-on:click="selectedIndex = index">
+                        <img :src="member.selectedPhoto" v-on:click="selectedIndex = index" style="width : 120px">
                     </div>
                     <div v-else>
-                        <img :src="member.basePhoto" v-on:click="selectedIndex = index">
+                        <img :src="member.basePhoto" v-on:click="selectedIndex = index" style="width : 120px">
                     </div>
                 </div>
             </div>
