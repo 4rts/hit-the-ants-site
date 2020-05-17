@@ -1,25 +1,38 @@
 <template>
-    <v-layout v-scroll:#scroll-target="onScroll" column class="ml-3 mr-3">
+    <v-layout v-scroll:#scroll-target="onScroll" column class="ml-3 mr-3" style="opacity: 70%;">
         <v-flex class="text-field-container ">
-            <v-text-field label="Email" clearable></v-text-field>
+            <v-text-field label="Email" clearable
+              color="rgb(160,160,160) darken-2"
+            ></v-text-field>
         </v-flex>
         <v-flex class="text-field-container">
-            <v-text-field label="Subject" clearable></v-text-field>
+            <v-text-field label="Subject" clearable
+            color="rgb(160,160,160) black"
+        ></v-text-field>
         </v-flex>
         <v-flex class="text-area-container">
-            <v-textarea  name="content" outlined color="white" label="Contents"  height="350px"></v-textarea>
+        <v-textarea
+          auto-grow
+          label="Content"
+          rows="1"
+          row-height="24px"
+          shaped
+        color="rgb(160,160,160) darken-2"
+
+        ></v-textarea>
+            <!-- <v-textarea  label="Contents" auto-grow rows="3" row-height="25" shaped></v-textarea> -->
         </v-flex>
         <div v-if="!isMobile">
              <v-flex style="text-align: right;">
                 <v-btn class="" outlined color="black" width="240px" height="80px">
-                    <v-icon left>mdi-pencil</v-icon> SEND
+                    SEND
                 </v-btn>
             </v-flex>
         </div>
         <div v-else>
             <v-flex style="text-align: center;">
-                <v-btn class="" outlined color="black" width="335px" height="44px">
-                    <v-icon left>mdi-pencil</v-icon> SEND
+                <v-btn class="" outlined color="black" width="100%" height="44px">
+                     SEND
                 </v-btn>
             </v-flex>
         </div>
@@ -67,6 +80,9 @@ export default {
 </script>
 
 <style scoped>
+.v-textarea textarea {
+    min-height: 300px;
+}
 .text-field-container {
     width: 100%;
     height: 65px;
@@ -76,4 +92,5 @@ export default {
     width: 100%;
     height: auto;
 }
+
 </style>

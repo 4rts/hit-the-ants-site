@@ -1,11 +1,11 @@
 <template>
     <div>
-        <v-container name="web" v-if="!isMobile">
+        <div v-if="!isMobile" class="ml-3 mr-3">
             <about-web/>
-        </v-container>
-        <v-container class="grid-list-sm pa-0" name="mobile" v-else>
+        </div>
+        <div class="grid-list-sm pa-0" v-else>
             <about-mobile/>
-        </v-container>
+        </div>
     </div>
 </template>
 
@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .about {
-    max-width: 1060px;
+    max-width: 1050px;
 }
 .v-card-container {
     box-shadow: none;

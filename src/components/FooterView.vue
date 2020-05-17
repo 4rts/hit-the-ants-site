@@ -57,7 +57,7 @@ export default {
       window.open('https://www.instagram.com/hittheants/', '_blank');
     },
     onResize () {
-        this.isMobile = window.innerWidth < 500
+        this.isMobile = window.innerWidth < 1000
     },
     onScroll(e) {
         this.offsetTop = e.target.scrollTop
@@ -75,6 +75,7 @@ export default {
   text-align: center;
 }
 .text-size-m{
+  margin-top: 7px !important;
   font-size: 11px !important;
 }
 .tail-size-m{
@@ -86,14 +87,14 @@ export default {
   width: 100%;
   height: 50px;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
 }
 .footer-upper-block img{
   background-color: white;
   height: 100%;
 }
 .upper-text{
-  margin-top: 15px;
+  margin-top: 12px;
   padding: 0%;
   color: white;
   padding-left: 22px;
@@ -104,7 +105,6 @@ export default {
   font-family: 'APPLE SD Gothic Neo','Apple';
   font-weight: 700;
   display: inline-flex;
-
 }
 .sns-container{
   display: inline;

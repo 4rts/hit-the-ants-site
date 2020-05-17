@@ -1,6 +1,6 @@
 <template>
     <v-layout v-scroll:#scroll-target="onScroll" column>
-        <div v-if="view === 'mobile'" style="line-height: 35px;">
+        <div v-if="view === 'mobile'" style="line-height: 38px;">
             <v-flex class="apple-sandol-font mobile" style="margin-left : 10px; ">
                 <v-flex class="d-flex">
                     <div class="d-inline-flex align-end">Hi there,<br>  </div>
@@ -8,7 +8,8 @@
                 <v-flex class="d-flex">
                     <div>
                         We are</div>
-                    <div class="saithik-font mobile" style="color: black;"> 2 </div>
+                    <div class="saithik-font mobile" style="color: black; margin-left: 10px; "> 2 </div>
+                    .
 
                 </v-flex>
                 <span class="d-inline" 
@@ -24,7 +25,8 @@
             <v-flex class="apple-sandol-font pad ml-5">
                 <v-flex class="d-flex">
                     <div class="d-inline-flex align-end">Hi there, we are </div>
-                    <div class="saithik-font pad" style="color: black;"> 2 </div>
+                    <div class="saithik-font pad" style="color: black; margin-left: 10px;"> 2 </div>
+                    .
                 </v-flex>
    
                 <span class="home-line d-inline"
@@ -40,7 +42,8 @@
             <v-flex class="apple-sandol-font web ml-5">
                 <v-flex class="d-flex">
                     <div class="d-inline-flex align-end">Hi there, we are  </div>
-                    <div class="saithik-font web" style="color: black;"> 2 </div>
+                    <div class="saithik-font web" style="color: black; margin-left: 10px; "> 2 </div>
+                    .
                 </v-flex>
                 <span class="mt-4  home-line d-inline" 
                     v-for="(string, index) in webString"
@@ -67,7 +70,7 @@ export default {
             view : 'mobile',
             mobileString: [
                 {prefix: 'We believe in collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'working on next', middle:'projects', suffix:' .',link : 'test/projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
                 {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
@@ -75,13 +78,13 @@ export default {
             ],
             webString:[
                 {prefix: 'We believe in collaboration',middle:'', suffix:'',link:''},
-                {prefix: 'and working on next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'and working on next', middle:'projects', suffix:' .',link : 'test/projects'},
                 {prefix: 'If you want to know more',middle:'about', suffix:'our team,',link : 'test/about'},
                 {prefix: 'you’re more than welcome to',middle:'contact', suffix:'us anytime.', link : 'test/contact'}   
             ],
             padString:[
                 {prefix: 'We believe in collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'test/projects'},
+                {prefix: 'working on next', middle:'projects', suffix:' .',link : 'test/projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
                 {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
@@ -109,13 +112,11 @@ export default {
 }
 </script>
 <style scoped>
-.saithik-font{
-    vertical-align: baseline;
-}
+
 .small-logo {
     position: fixed;
     left: 44px;
-    bottom: 100px;
+    bottom: 70px;
 }
 
 .image-content >div{

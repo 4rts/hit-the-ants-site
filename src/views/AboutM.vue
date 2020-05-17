@@ -60,7 +60,7 @@ export default {
                     ig: 'https://www.instagram.com/g.nyuk/'
                 }, {
                     name: '박한빈',
-                    introduce: '방년 25세, 시들어가는 중. 꽃가루 알레르기는 없지만 왠지 봄이 오면 코가 간지러움.',
+                    introduce: '방년 25세. 술과 식물을 좋아해서 술 취한 식물마냥 시들어가는 중. 꽃가루 알레르기는 없지만 왠지 봄이 오면 코가 간지러움.',
                     photo: '',
                     // basePhoto: '/img/imgHbBlack.png',
                     // selectedPhoto: '/img/imgHbColor.png',

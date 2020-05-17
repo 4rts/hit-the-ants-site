@@ -31,7 +31,7 @@
         </v-flex>
     </div>
     <div v-else>
-        <div class="mt-5 ml-3 mr-5  title-block">
+        <div class="mt-5 ml-3 mr-3  title-block">
             <div class="title">
                 COLLACT
             </div>
@@ -99,7 +99,6 @@ export default {
     line-height: 23px;
 }
 .title-block{
-
     display: inline;
 }
 .title{
@@ -109,7 +108,8 @@ export default {
     width: fit-content;
     float: left;
     color: black;
-    
+    margin-left: 10px;
+
 }
 .title img{
     width: 13px;
