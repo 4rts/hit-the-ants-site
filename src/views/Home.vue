@@ -16,7 +16,14 @@
                     v-for="(string, index) in mobileString"
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font mobile" :to="string.link" style="color: black;">{{string.middle}}</router-link>
+                        <router-link class="saithik-font mobile" :to="string.link" style="color: black;">
+                            <span v-if="index != 1" style="margin-right : -10px">
+                                {{string.middle}} 
+                            </span>
+                            <span v-else style="margin-right : -15px">
+                                {{string.middle}} 
+                            </span>
+                        </router-link>
                         {{string.suffix}}</v-flex>
             </span>
             </v-flex>
@@ -33,7 +40,14 @@
                     v-for="(string, index) in padString" 
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font pad" :to="string.link" style="color: black;">{{string.middle}}</router-link>
+                        <router-link class="saithik-font pad" :to="string.link" style="color: black;">
+                            <span v-if="index != 1" style="margin-right : -15px">
+                                {{string.middle}} 
+                            </span>
+                            <span v-else style="margin-right : -25px">
+                                {{string.middle}} 
+                            </span>
+                        </router-link>
                         {{string.suffix}}</v-flex>
             </span>
             </v-flex>
@@ -49,7 +63,14 @@
                     v-for="(string, index) in webString"
                     :key="index">
                         <v-flex>{{string.prefix}}
-                        <router-link class="saithik-font web" :to="string.link" style="color: black; margin-right : -15px"> {{string.middle}} </router-link>
+                        <router-link class="saithik-font web" :to="string.link" style="color: black;"> 
+                            <span v-if="index != 1" style="margin-right : -15px">
+                                {{string.middle}} 
+                            </span>
+                            <span v-else style="margin-right : -28px">
+                                {{string.middle}} 
+                            </span>
+                        </router-link>
                         {{string.suffix}}</v-flex>
                 </span>
                 <div class="small-logo">
@@ -70,25 +91,25 @@ export default {
             view : 'mobile',
             mobileString: [
                 {prefix: 'We believe in collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:' .',link : 'test/projects'},
+                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
-                {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
+                {prefix: 'more', middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
-                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'test/contact'}
+                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'contact'}
             ],
             webString:[
                 {prefix: 'We believe in collaboration',middle:'', suffix:'',link:''},
-                {prefix: 'and working on next', middle:'projects', suffix:' .',link : 'test/projects'},
-                {prefix: 'If you want to know more',middle:'about', suffix:'our team,',link : 'test/about'},
-                {prefix: 'you’re more than welcome to',middle:'contact', suffix:'us anytime.', link : 'test/contact'}   
+                {prefix: 'and working on next', middle:'projects', suffix:'.',link : 'projects'},
+                {prefix: 'If you want to know more',middle:'about', suffix:'our team,',link : 'about'},
+                {prefix: 'you’re more than welcome to',middle:'contact', suffix:'us anytime.', link : 'contact'}   
             ],
             padString:[
                 {prefix: 'We believe in collaboration and',middle:'', suffix:'',link:''},
-                {prefix: 'working on next', middle:'projects', suffix:' .',link : 'test/projects'},
+                {prefix: 'working on next', middle:'projects', suffix:'.',link : 'projects'},
                 {prefix: 'If you want to know',middle:'', suffix:'',link:''},
-                {prefix: 'more', middle:'about', suffix:'our team,',link : 'test/about'},
+                {prefix: 'more', middle:'about', suffix:'our team,',link : 'about'},
                 {prefix: 'you’re more than welcome to',middle:'', suffix:'',link:''}, 
-                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'test/contact'}   
+                {prefix: '',middle:'contact', suffix:'us anytime.', link : 'contact'}   
             ],
         }
     },

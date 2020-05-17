@@ -24,10 +24,12 @@
                 </div>
             </div>
         </v-flex>
-        <v-flex style="width : 100%; margin-top : 30px;">
+        <v-flex style="width : 100%; margin-top : 30px; line-height: 0">
             <img src="../assets/images/collact1.png" style="width: 100%; ">
             <img src="../assets/images/collact2.png" style="width: 100%; ">
-            <img src="../assets/images/collact3.png" style="width: 100%;margin-top: 50px;">
+            <img src="../assets/images/collact3.png" style="width: 100%; ">
+            <img src="../assets/images/collact4.png" style="width: 100%; ">
+            <img src="../assets/images/collact5.png" style="width: 100%; ">
         </v-flex>
     </div>
     <div v-else>
@@ -53,7 +55,9 @@
             <div>
                 <img src="../assets/images/collact1.png" style="width: 100%; ">
                 <img src="../assets/images/collact2.png" style="width: 100%; ">
-                <img src="../assets/images/collact3.png" style="width: 100%;margin-top: 20px;">
+                <img src="../assets/images/collact3.png" style="width: 100%;">
+                <img src="../assets/images/collact4.png" style="width: 100%; ">
+                <img src="../assets/images/collact5.png" style="width: 100%; ">
             </div>
         </v-flex>
     </div>
